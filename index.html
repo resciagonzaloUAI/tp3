@@ -6,7 +6,8 @@
     <meta name="title" content="Primer HTML">
     <meta name="description" content="Trabajo practico 3 para LPPA">       
 </head>  
-<body>  
+<body>
+<div class="noticia">  
 <h1>"El auto fue inmanejable": el jefe de Mercedes le pidió perdón a Hamilton luego de una "carrera terrible" para el inglés</h1>
 <h2>En la vuelta de honor, Toto Wolff se disculpó por el mal coche que le entregaron al séptuple campeón mundial, que terminó
 13 y Max Verstappen le sacó una vuelta.
@@ -73,7 +74,7 @@ merecemos, los puntos y el resultado. Saldremos de esta, pero esta fue una carre
     </span><br><br>
     <span>-<b>Pregunta</b>:“¿Cómo te sientes con el coche, Lewis? Porque hemos escuchado por radio a Toto disculparse por el coche”
     </span><br><br>
-    <span>-<b>Hamilton</b>:<b>“Es duro, es duro”</b>>
+    <span>-<b>Hamilton</b>:<b>“Es duro, es duro”</b>
     </span><br><br>
     <span>-<b>Pregunta</b>:“¿Y qué esperas para Miami?”
     </span><br><br>
@@ -96,6 +97,8 @@ merecemos, los puntos y el resultado. Saldremos de esta, pero esta fue una carre
 <p>En dos semanas Hamilton tendrá revancha en los Estados Unidos, en el estreno del Gran Premio de Miami. Aunque es poco probable que haya una mejora 
     en el funcionamiento del auto. Sería en España, el 22 de mayo, donde Mercedes presentaría sus desarrollo en el auto.
 </p>
+</div>
+<div class="tabla">
 <p>A continuación, una tabla con los tiempos que tardó Hamilton en sus tres primeras vueltas:</p>
 <table>
     <tr>
@@ -115,17 +118,38 @@ merecemos, los puntos y el resultado. Saldremos de esta, pero esta fue una carre
         <td>3.5 minutos</td>
     </tr>
 </table>
-
-
-
-
-
-
-<footer>
+</div>
+<div class="seguirLey">
 <p><b>SEGUIR LEYENDO</b></p>
 <a href="">Verstappen ganó el GP de Emilia Romaña en la casa de ferrari y se prende a la lucha por el título de la Fórmula 1</a><br>
 <a href="">“Pasé del límite”: la autocrítica de Leclerc tras perder el podio en el GP de Emilia Romaña de la Fórmula 1</a><br>
 <a href="">Así fue el toque en la primera curva de Carlos Sainz que lo dejó afuera del GP de Emilia Romaña de la Fórmula 1</a><br>
+</div>
+
+<footer>
+<div class="footer">
+<p> A contunuación, dejamos un formulario de contacto por si tiene alguna consulta o quiere hacer algún reclamo con la noticia:</p>
+<form>
+    <label for="contacto">Indique si es reclamo o consulta</label>
+    <select name="contacto" id="contacto" form="carform">
+        <option value="reclamo">Reclamo</option>
+        <option value="consulta">Consulta</option>
+       <br>
+    </select><br><br>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required name="nombre" minlength="2" maxlength="15" placeholder="Nicolas"></imput><br>
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido" required name="apellido" minlength="2" maxlength="15" placeholder="Gomez"></imput><br>
+    <label for="edad">Edad</label>
+    <input type="number" id="idpaciente" name="edad" min="0" max="20" placeholder="25"></imput><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" required name="email" placeholder="asd@gmail.com"></imput><br>
+    <label for="consulta">Consulta</label>
+    <input type="text" id="consulta" name="consulta" placeholder="Ingrese aquī su comentario"><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+</div>
 </footer>
 </body>  
 </html> 
